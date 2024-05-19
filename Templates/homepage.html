@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Improving Reading Comprehension</title>
+    <link rel="stylesheet" href="{% static 'homepage.css' %}" />
+</head>
+<body>
+    <header>
+        <h1>Improving Reading Comprehension: Assistive, Virtual, and Educative web based Software (AVES)</h1>
+    </header>
+    <main>
+        <section class="project-overview">
+            <h1>Project Overview</h1>
+            <p>The main objective of this study is to design, develop, implement, and evaluate a system with a multi-modal approach, incorporating quiet reading, loud reading, question generation, and comprehension assessment functionalities utilizing natural language processing (NLP) and machine learning (ML) to enhance the reading comprehension of students.</p>
+        </section>
+        <section class="question-answering-system">
+            <h2>Question Answering System</h2>
+            <div class="container">
+                <div class="passage">
+                    <h3>Passage :</h3>
+                    <textarea id="passage_text" name="passage_text">{{ passage }}</textarea>
+                    <button id="listen_button">Listen</button>
+                    <button id="pause_button">Pause</button>
+                </div>
+                <div class="question-answer">
+                    <h3>Model Questions and Answers</h3>
+                    <div class="question-answer-container">
+                        <ul class="question-list">
+                            {% for item in questions_and_distractors %}
+                            <li>
+                                <p>{{ item.question }}</p>
+                                <ul class="answer-list">
+                                    {% for i in item.options %}
+                                    <li>
+                                        <p>{{ i }}</p>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
