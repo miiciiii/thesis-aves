@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #3f4a6b;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+#question-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#question {
+  background-color: #dcdcdc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#choices-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.choice-label {
+  color: white;
+  display: block;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding-left: 20px;
+  align-content: center;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #3f4a6b;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.btn {
+  background-color: #3f4a6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns with equal width */
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.comprehension-analysis, .cognitive-analysis {
+  margin-top: 20px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.cognitive-data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cognitive-data div {
+  flex: 1 1 45%;
+  min-width: 100px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .box {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto;
+    margin-bottom: 1px; /* Add margin-bottom here */
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .table-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

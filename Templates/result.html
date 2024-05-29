@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Summary</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/result.css' %}" />
+</head>
+<body>
+<header>
+    <h1>Session Summary</h1>
+</header>
+<div class="container">
+    <div class="summary-header">
+        <div class="header-item">
+            <p>Date: <span id="date"></span></p>
+        </div>
+        <div class="header-item">
+            <p>Duration: <span id="duration"></span></p>
+        </div>
+        <div class="header-item">
+            <p>Reading Mode: <span id="reading-mode"></span></p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="passage-div" class="box">
+            <p id="passage"></p>
+        </div>
+
+        <div id="question-div" class="box">
+            <p id="question"></p>
+            <div id="choices-div"></div>
+            <div class="button-container">
+                <button id="previous-button" class="button">&lt;-</button>
+                <button id="next-button" class="button">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="comprehension-analysis">
+        <h2>Comprehension Analysis Score:</h2>
+        <div class="table-container">
+            <table id="remarks-table"></table>
+        </div>
+        <p>Overall Score: <span id="overall-score"></span></p>
+    </div>
+
+    <div class="cognitive-analysis">
+        <h2>Cognitive Load and Affect Analysis:</h2>
+        <div class="cognitive-data">
+            <div>
+                <p>Excited</p>
+                <p>Arousal</p>
+            </div>
+            <div>
+                <p>Neutral</p>
+                <p>Dominance</p>
+            </div>
+            <div>
+                <p>62.5%</p>
+                <p>Mental Demand</p>
+            </div>
+            <div>
+                <p>51.7%</p>
+                <p>Performance</p>
+            </div>
+            <div>
+                <p>94.1%</p>
+                <p>Effort</p>
+            </div>
+            <div>
+                <p>34.5%</p>
+                <p>Frustration</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'script/result-script.js' %}"></script>
+<script src="{% static 'evaluationMetrics/cScoreSimple.js' %}"></script>
+</body>
+</html>

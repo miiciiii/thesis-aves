@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3f4a6b;
+    padding: 20px;
+    width: 100%;
+}
+
+#title {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#content {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: flex-end; /* Aligns content to the left */
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    height: 500px; /* Add fixed height here */
+}
+
+#passage {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#question-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#question {
+    background-color: #dcdcdc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#choices-div {
+    margin-bottom: 20px;
+}
+
+#choices-div label {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    align-content: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3f4a6b;
+}
+
+#choices-div label.selected {
+    background-color: #2f3957;
+}
+
+.btn {
+  background-color: #3f4a6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Two columns with equal width */
+    justify-content: space-between;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.radio input:checked+label {
+    color: #16B67F;
+}
+
+input[type="radio"] {
+    visibility: hidden
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .box {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto;
+        margin-bottom: 1px; /* Add margin-bottom here */
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+    }
+}

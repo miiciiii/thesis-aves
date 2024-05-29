@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/quiz.css' %}" />
+</head>
+<body>
+<header></header>
+
+<div id="title">
+    <p>QUIET READING</p>
+</div>
+
+<div id="content" class="grid-container">
+    <div id="passage-div" class="box">
+        <p id="passage"></p>
+    </div>
+    <div id="question-div" class="box">
+        <p>Choose the correct answer from the choices below:</p>
+        <p id="question"></p>
+        <div id="choices-div"></div>
+        <div class="button-container">
+            <button id="previous-button" class="button">&lt;-</button>
+            <button id="next-button" class="button">&gt;</button>
+            <button id="submit-button" class="button">submit</button>
+        </div>
+    </div>
+</div>
+
+<!-- Link to your JavaScript file -->
+<script src="{% static 'quiz-script.js' %}"></script>
+</body>
+</html>

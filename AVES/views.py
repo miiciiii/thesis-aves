@@ -6,7 +6,7 @@ import pandas as pd
 import nltk
 import torch
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from transformers import T5ForConditionalGeneration, T5Tokenizer
 from sentence_transformers import SentenceTransformer
 from nltk.corpus import stopwords, wordnet as wn
@@ -16,6 +16,8 @@ from textdistance import levenshtein
 import pke
 
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+from .models import Quiz
 
 # Download NLTK data
 nltk.download('omw-1.4')
@@ -93,7 +95,6 @@ def get_keywords(passage):
     keywords = [word for word, score in sorted_words]
     
     return keywords
-
 
 
 def get_question(context, answer, model, tokenizer):
@@ -267,13 +268,14 @@ def get_mca_questions(context, qg_model, qg_tokenizer, s2v, sentence_transformer
 
             print(f"[DEBUG] Final distractors: {distractors} for question: '{question}'")
 
-            options = distractors + [t5_answer]
-            random.shuffle(options)
-            print(f"[DEBUG] Options: {options} for question: '{question}'")
+            choices = distractors + [t5_answer]
+            random.shuffle(choices)
+            print(f"[DEBUG] Options: {choices} for question: '{question}'")
 
             output_list.append({
                 'question': question,
-                'options': options
+                'choices': choices,
+                'correct_answer' : t5_answer
             })
 
         print(f"[DEBUG] Generated {len(output_list)} questions so far after {attempts} attempts")
@@ -281,21 +283,42 @@ def get_mca_questions(context, qg_model, qg_tokenizer, s2v, sentence_transformer
     return output_list[:num_questions]
 
 
-def gen(passage):
+def get_passage(passage):
     """Generate a random context from the dataset."""
     return passage.sample(n=1)['context'].values[0]
 
-def homepage(request):
-    """Render the homepage with generated questions."""
-    original_context = gen(random_passage)
-    questions_and_distractors = get_mca_questions(original_context, t5qg_model, t5qg_tokenizer, s2v, sentence_transformer_model, num_questions=5)
+def landing_page(request):
+
+    return render(request, 'landing-page.html')
+
+def quiz(request):
     
+    original_context = get_passage(random_passage)
+    questions_and_distractors = get_mca_questions(original_context, t5qg_model, t5qg_tokenizer, s2v, sentence_transformer_model, num_questions=5)
+
+    for question_data in questions_and_distractors:
+        question = question_data['question']
+        choices = ', '.join(question_data['choices'])
+        correct_answer = question_data['correct_answer']
+
+
+        quiz = Quiz(
+            passage = original_context,
+            question = question,
+            choices = choices,
+            correct_answer = correct_answer
+        )
+
+        quiz.save()
+
     context = {
-        'passage': original_context,
-        'questions_and_distractors': questions_and_distractors
+        'passage' : original_context,
+        'questions_and_distractors' : questions_and_distractors
+
     }
 
-    print("[DEBUG] Final questions and distractors:")
-    print(questions_and_distractors)
+    return render(request, 'quiz.html', context)
 
-    return render(request, 'homepage.html', context)
+def result(request):
+
+    return render(render, 'result.html')

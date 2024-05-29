@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Modal Reading Web-App</title>
+    <link rel="stylesheet" href="{% static 'styles/landing-page.css' %}">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="illustration-placeholder">
+                <img src="{% static 'images/landing-page-main.svg' %}" alt="Main Illustration" class="main-illustration">
+            </div>
+            <h1 class="title-text">Welcome to <br> iCOMPREHEND</h1>
+        </section>
+
+        <section class="texts">
+            <p class="subtitute-text-1">iCOMPREHEND is a platform that offers a <br> transforming experience by fusing
+                reading <br> and comprehension.</p>
+            <p class="subtitute-text-2">Select between Loud, Quiet, or Timed modes <br> for deeper understanding. Take
+                the first <br> step toward
+                developing your reading <br> comprehension today.</p>
+        </section>
+
+        <section class="feature">
+            <div class="card" id="card-1">
+                <h2 class="title">Multi-Modal Reading <br> Web-based system</h2>
+                <p class="content">A web-based, multi-modal application to enhance reading comprehension incorporating
+                    timed loud and
+                    quiet reading sessions.</p>
+                <button class="cta-button">Read More</button>
+            </div>
+            <div class="illustration-placeholder">
+                <img src="{% static 'images/landing-page-secondary.svg' %}" alt="Main Illustration" class="secondary-illustration">
+            </div>
+        </section>
+        <div class="ctas">
+            <h2 class="cta-header">Let's dive in!</h2>
+            <div class="cta">
+                <div class="cta-container">
+                    <h3 class="personal">Do you want to create a <br> personal profile?</h3>
+                    <div class="card">
+                        <div class="circular-image">
+                            <img src="{% static 'images/profile.png' %}" alt="Profile Icon">
+                        </div>
+                        <p class="card-body">
+                            Track your progress and customize your experience.
+                        </p>
+                        <button class="cta-button">Create a profile</button>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <h3 class="incognito">Do you want to <br> start immediately?</h3>
+                    <div class="card">
+                        <div class="circular-image">
+                            <img src="{% static 'images/incognito.png' %}" alt="Start Immediately Icon">
+                        </div>
+                        <p class="card-body">
+                            Jump right in and start improving your reading comprehension immediately.
+                        </p>
+                        <a href="{% url 'quiz' %}" class="cta-button">Start Immediately</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New circle elements -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+        <div class="circle7"></div>
+        <div class="circle8"></div>
+    </main>
+    <script src="{% static 'script/landing-page.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+ * {
+    font-family: Fraunces, Poppins;
+}
+
+body {
+    padding: 0 100px;
+    /* Keep horizontal padding */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 120px;
+    height: 50px;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+header .logo {
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.text {
+    text-align: left;
+}
+
+.text .title {
+    font-family: Fraunces;
+font-size: 30px;
+font-weight: 400;
+line-height: 36.99px;
+text-align: left;
+
+    margin-top: 150px; /* Adjust as needed */
+}
+
+.text .subtitle {
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+
+
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px; /* Adjust as needed */
+}
+
+.cta-header {
+    font-family: Fraunces;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49.32px;
+    margin-bottom: 20px;
+    /* Center the element itself with auto margins */
+    color: black;
+    /* Add color for better visibility if needed */
+}
+
+.circular-image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #3a3b9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.circular-image img {
+    width: 100%;
+    height: auto;
+}
+
+.personal,
+.incognito {
+    font-family: Fraunces;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.99px;
+    text-align: center;
+}
+
+.card {
+    margin-inline: 0px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #414770;
+
+    height: auto; /* Adjust as needed */
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+.card-body {
+    margin-top: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #414770;
+}
+
+.cta-button {
+    background: #6883BA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #5572a3;
+}

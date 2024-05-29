@@ -1,0 +1,82 @@
+[
+    {
+        "passage": "In a quaint little village nestled among rolling hills, there lived a young girl named Lily. She had a curious mind and loved exploring the nearby forest. One day, while wandering through the ancient trees, she stumbled upon an old, dusty book hidden beneath a moss-covered rock. The book was filled with cryptic symbols and faded illustrations. Determined to unravel its secrets, Lily embarked on a quest to decipher the mysterious text.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Lilly", "Harry", "Ron", "Hermione"],
+            "answer": "Lilly"
+        }
+    },
+    {
+        "passage": "High atop a towering mountain, there dwelled a wise old wizard named Merlin. With his beard flowing like a river and his robes shimmering in the moonlight, Merlin was a figure of mystery and magic. Many sought his counsel, but few could reach his remote abode. One fateful day, a young adventurer named Arthur braved the treacherous journey to seek Merlin's guidance in fulfilling his destiny.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Merlin", "Arthur", "Gandalf", "Dumbledore"],
+            "answer": "Merlin"
+        }
+    },
+    {
+        "passage": "Deep in the heart of a vast desert, there resided a nomadic tribe led by a courageous warrior named Aisha. With her sword as sharp as her wit, Aisha protected her people from marauding bands and fierce sandstorms. One sweltering afternoon, as she scoured the dunes for signs of danger, Aisha stumbled upon a hidden oasis shimmering like a mirage in the distance. Little did she know, the oasis held the key to unlocking a long-forgotten prophecy.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Aisha", "Ali", "Fatima", "Ahmad"],
+            "answer": "Aisha"
+        }
+    },
+    {
+        "passage": "In the bustling streets of a sprawling metropolis, there lived a street artist named Diego. Armed with cans of spray paint and boundless creativity, Diego transformed mundane walls into vibrant masterpieces that captivated passersby. One rainy evening, while sheltering under a makeshift awning, Diego stumbled upon an old photograph tucked away in a forgotten corner. The image held clues to a hidden treasure buried deep within the city's labyrinthine alleyways.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Diego", "Pablo", "Frida", "Vincent"],
+            "answer": "Diego"
+        }
+    },
+    {
+        "passage": "Amidst the tranquil beauty of a secluded monastery nestled in the mountains, there lived a young monk named Koji. With his serene demeanor and unwavering devotion, Koji was revered by his fellow monks as a paragon of wisdom and humility. One crisp morning, as he meditated beneath the ancient cherry blossoms, Koji uncovered a centuries-old manuscript hidden within the monastery's archives. Little did he know, the manuscript contained the key to unlocking a profound spiritual revelation.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Koji", "Takeshi", "Hiroshi", "Yuki"],
+            "answer": "Koji"
+        }
+    },
+    {
+        "passage": "In a quaint little village nestled among rolling hills, there lived a young girl named Lily. She had a curious mind and loved exploring the nearby forest. One day, while wandering through the ancient trees, she stumbled upon an old, dusty book hidden beneath a moss-covered rock. The book was filled with cryptic symbols and faded illustrations. Determined to unravel its secrets, Lily embarked on a quest to decipher the mysterious text.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Lilly", "Harry", "Ron", "Hermione"],
+            "answer": "Lilly"
+        }
+    },
+    {
+        "passage": "High atop a towering mountain, there dwelled a wise old wizard named Merlin. With his beard flowing like a river and his robes shimmering in the moonlight, Merlin was a figure of mystery and magic. Many sought his counsel, but few could reach his remote abode. One fateful day, a young adventurer named Arthur braved the treacherous journey to seek Merlin's guidance in fulfilling his destiny.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Merlin", "Arthur", "Gandalf", "Dumbledore"],
+            "answer": "Merlin"
+        }
+    },
+    {
+        "passage": "Deep in the heart of a vast desert, there resided a nomadic tribe led by a courageous warrior named Aisha. With her sword as sharp as her wit, Aisha protected her people from marauding bands and fierce sandstorms. One sweltering afternoon, as she scoured the dunes for signs of danger, Aisha stumbled upon a hidden oasis shimmering like a mirage in the distance. Little did she know, the oasis held the key to unlocking a long-forgotten prophecy.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Aisha", "Ali", "Fatima", "Ahmad"],
+            "answer": "Aisha"
+        }
+    },
+    {
+        "passage": "In the bustling streets of a sprawling metropolis, there lived a street artist named Diego. Armed with cans of spray paint and boundless creativity, Diego transformed mundane walls into vibrant masterpieces that captivated passersby. One rainy evening, while sheltering under a makeshift awning, Diego stumbled upon an old photograph tucked away in a forgotten corner. The image held clues to a hidden treasure buried deep within the city's labyrinthine alleyways.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Diego", "Pablo", "Frida", "Vincent"],
+            "answer": "Diego"
+        }
+    },
+    {
+        "passage": "Amidst the tranquil beauty of a secluded monastery nestled in the mountains, there lived a young monk named Koji. With his serene demeanor and unwavering devotion, Koji was revered by his fellow monks as a paragon of wisdom and humility. One crisp morning, as he meditated beneath the ancient cherry blossoms, Koji uncovered a centuries-old manuscript hidden within the monastery's archives. Little did he know, the manuscript contained the key to unlocking a profound spiritual revelation.",
+        "questions-choices-answer": {
+            "question": "Who is the main character in the passage?",
+            "choices": ["Koji", "Takeshi", "Hiroshi", "Yuki"],
+            "answer": "Koji"
+        }
+    }
+]
